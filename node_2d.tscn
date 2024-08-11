@@ -42,6 +42,7 @@ offset_left = -15.0
 offset_top = -43.0
 offset_right = 5.0
 offset_bottom = -23.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -62,4 +63,19 @@ offset_bottom = 4.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 color = Color(0, 0.921569, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
+position = Vector2(-88, 0)
+script = ExtResource("1_j8pm2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2"]
+position = Vector2(-5, -33)
+shape = SubResource("RectangleShape2D_7cfv3")
+
+[node name="ColorRect" type="ColorRect" parent="CharacterBody2D2"]
+offset_left = -15.0
+offset_top = -43.0
+offset_right = 5.0
+offset_bottom = -23.0
 metadata/_edit_use_anchors_ = true
